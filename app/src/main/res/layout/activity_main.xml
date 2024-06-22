@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivPrincipal"
+                android:layout_width="match_parent"
+                android:layout_height="328dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/carritocompra" />
+
+            <Button
+                android:id="@+id/bListar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#59E1F3"
+                android:onClick="entrarListar"
+                android:text="LISTAR PRODUCTOS"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/bAnadir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#59E1F3"
+                android:onClick="entrarAnadir"
+                android:text="AÑADIR PRODUCTO"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/bActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#59E1F3"
+                android:onClick="entrarActualizar"
+                android:text="ACTUALIZAR PRODUCTO"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/bEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#59E1F3"
+                android:onClick="entrarEliminar"
+                android:text="ELIMINAR PRODUCTO"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/bMostrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#59E1F3"
+                android:onClick="entrarMostrar"
+                android:text="MOSTRAR INFORMACIÓN"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/bSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#FA845F"
+                android:onClick="salir"
+                android:text="SALIR"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
